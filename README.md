@@ -1,13 +1,15 @@
-# Practicing NanoGPT 🤖
+bb# Practicing NanoGPT 🤖
  Trying out nanoGPT for the first time...
 
-:point_right: 👉Following the two, Simon Willison blog posts on setting up nanoGPT
+👉Following the two, Simon Willison blog posts on setting up nanoGPT
 > https://til.simonwillison.net/llms/nanogpt-shakespeare-m2
 > https://til.simonwillison.net/llms/training-nanogpt-on-my-blog
 
 
 ___
-### Summary of the steps I took
+</br>
+
+### Summary of the **setup** steps that I took
 
 1. Clone from Andrej Karpathy's nanoGPT repo
     ```py
@@ -26,7 +28,14 @@ ___
     **+PLUS** install PyTorch according to the setup that
     </br>
         works for you https://pytorch.org/get-started/locally/
-    ```py
     
+    I personally ran the following for system with **windows, pip, python and cpu**:
+    ```py
+    pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
     ```
-    fixing this soon...
+
+And that should be it for the initial setup..
+
+___
+</br>
+### How I understand it...
