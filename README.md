@@ -48,7 +48,7 @@ python prepare.py
 
 Basically what prepare.py does, is that it downloads the data you want to feed it, and splits it into training and validation sets, creating the train.bin & val.bin files.
 ____
-**Next**, start training! You might want to change the options </br> of train.py to fit your system. you could do this by either changing them straight in the file, or by overriding them like this (e.g)
+**Next**, start training! You might want to change the options </br> of train.py to fit your system. you could do this by either changing them straight in the file, or by overriding them like this (e.g):
 ```py
 python train.py --dataset=simonwillisonblog --n_layer=4 --n_head=4 --n_embd=64 --compile=False --eval_iters=1 --block_size=64 --batch_size=8 --device=cpu
 ```
@@ -64,3 +64,7 @@ iter 3: loss 10.8250, time 145.10ms
 iter 4: loss 10.8312, time 140.41ms
 iter 5: loss 10.8306, time 135.30ms
 ```
+
+After it has reached its first checkpoint (which you can change in train.py, **"eval_interval"**)
+it should have created a **"out"** folder with **"ckpt.pt"**, which is a record of all it's training checkpoints.
+
